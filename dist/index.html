@@ -5,12 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="/bread.3b53497e.jpg">
+    <link rel="stylesheet" href="/main.af46ece4.css">
+    <style>body {
+            background-image: url("/mountain-background.70f9a6af.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }</style>
+    <title>Bryce Sampson</title>
+<script src="/main.af46ece4.js"></script></head>
 
 <body>
-    <div id="container"></div>
-    <script src="/src.e31bb0bc.js"></script>
+    <header class="main-header" id="home">
+        <h1 class="main-header__title">Bryce Sampson</h1>
+        <nav class="nav--margin-right">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="#home">Home</a></li>
+                <li class="nav-list__item"><a href="#about">About</a></li>
+                <li class="nav-list__item"><a href="#contact">Contact</a></li>
+                <li class="nav-list__item:last-child"><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="container">
+        <div class="bg-image"></div>
+        <h2 id="about">About Me</h2>
+        <section class="about-me">
+            <p><img src="/310716_10150369355971665_1640454037_n.7a460512.jpg" alt="Profile Pic" height="75%">
+            </p>
+            <br>
+            <p class="about-me__intro">I am a software developer who lives in Columbus, Ohio. When not coding, I
+                have a long list of hobbies I enjoy doing from going to concerts, reading, volunteering and playing
+                rec sports.
+
+            </p>
+
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Gradle</li>
+                <li>TDD</li>
+            </ul>
+        </section>
+        <h1 id="projects">Projects</h1>
+        <div class="container">
+            <article class="project">
+                <a href="https://github.com/charles-m-doan/virtual-pet" target="_blank">
+                    <img src="/VPet-screenshot.a5c7f8c4.png" alt="Virtual Pet screenshot" width="350rem"></a>
+                <header>
+                    <h2><a class="a-project" href="https://github.com/charles-m-doan/virtual-pet" target="_blank">Virtual Pet</a></h2>
+                </header>
+                <section>
+                    <p>
+                        </p><h4>Language/Tools Used</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>Gradle</li>
+                            <li>Git</li>
+                            <li>TDD</li>
+                        </ul>
+                    <p></p>
+                    <p>Group of four classmates and I worked together using Java, Git and TDD.
+                        We built an App capable of creating and interacting with virtual pets in various ways.
+                    </p>
+                </section>
+            </article>
+
+            <article class="project">
+                <a href="https://github.com/bryce-sampson/university-clinic-hospital" target="_blank">
+                    <img src="/UCH-screenshot.b51d189b.png" alt="UCH screenshot" width="350rem"></a>
+
+                <header>
+                    <h2><a class="a-project" href="https://github.com/bryce-sampson/university-clinic-hospital" target="_blank">Uni Clinic Hospital</a></h2>
+                </header>
+                <section>
+                    <p>
+                        </p><h4>Language/Tools Used</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>Gradle</li>
+                            <li>Git</li>
+                            <li>TDD</li>
+                        </ul>
+                    <p></p>
+                    <p>Two classmates and I worked together using Java, Git and TDD.
+                        We built an App capable of interacting with different hospital employees and having
+                        them perform different task.
+                    </p>
+                </section>
+            </article>
+
+            <article class="project">
+                <a href="https://github.com/bryce-sampson/bryce-sampson.github.io" target="_blank">
+                    <img src="/portfolio.44dc1785.png" alt="portfolio screenshot" width="350rem"></a>
+
+                <header>
+                    <h2><a class="a-project" href="https://github.com/bryce-sampson/bryce-sampson.github.io" target="_blank">Portfolio</a>
+                    </h2>
+                </header>
+                <section>
+                    <p>
+                        </p><h4>Language/Tools Used</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Git</li>
+                        </ul>
+                    <p></p>
+                    <p>I worked using HTML, CSS and Git. I built a webpage of my portfolio,
+                        describing who I am and what I have accomplished so far.
+                    </p>
+                </section>
+            </article>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Virtual Pet')">Virtual Pet</button>
+            <button class="tablinks" onclick="openProject(event, 'Uni Clinic Hospital')">Uni Clinic Hospital</button>
+            <button class="tablinks" onclick="openProject(event, 'Portfolio')">Portfolio</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Virtual Pet" class="tabcontent">
+            <h3>Virtual Pet</h3>
+            <p>Group of four classmates and I worked together using Java, Git and TDD.
+                We built an App capable of creating and interacting with virtual pets in various ways.
+            </p>
+        </div>
+
+        <div id="Uni Clinic Hospital" class="tabcontent">
+            <h3>Uni Clinic Hospital</h3>
+            <p>Two classmates and I worked together using Java, Git and TDD.
+                We built an App capable of interacting with different hospital employees and having
+                them perform different task.
+            </p>
+        </div>
+
+        <div id="Portfolio" class="tabcontent">
+            <h3>Portfolio</h3>
+            <p>I worked using HTML, CSS and Git. I built a webpage of my portfolio,
+                describing who I am and what I have accomplished so far.
+            </p>
+        </div>
+
+
+
+
+
+        <div class="contact-info" id="contact">
+            <p>
+                <a href="tel:14195819211" class="mobiles-Only">
+                    <img src="/phone.9ce5be30.jpg" alt="Phone Number" width="30rem"></a>
+                <!-- Call me, beep me if you wanna reach me, When you wanna page me, it's okay -->
+            </p>
+            <p>
+                <a href="mailto:sampsonbrycea@gmail.com" target="_blank">
+                    <img src="/gmail.517ac799.png" alt="E-mail Address" width="30rem"></a>
+            </p>
+            <p> <a href="https://www.linkedin.com/in/bryce-sampson" target="_blank">
+                    <img src="/linkedin.03aad0ec.png" alt="LinkedIn Page" width="30rem"></a>
+                <!-- We're all linkedin together, Once we link, Then we are, We're all connected -->
+            </p>
+            <p> <a href="https://github.com/bryce-sampson" target="_blank">
+                    <img src="/github.0512e05a.png" alt="Github Page" width="30rem"></a>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">&copy;2019</footer>
+    <script src="/js.00a46daa.js"></script>
 </body>
 
 </html>

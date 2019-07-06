@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"main.js":[function(require,module,exports) {
+})({"js/main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -130,7 +130,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"index.js":[function(require,module,exports) {
+},{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _main = _interopRequireDefault(require("./main"));
@@ -138,7 +138,29 @@ var _main = _interopRequireDefault(require("./main"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _main.default)();
-},{"./main":"main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function openProject(evt, projectName) {
+  // Declare all variables
+  var i, tabcontent, tablinks; // Get all elements with class="tabcontent" and hide them
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  } // Get all elements with class="tablinks" and remove the class "active"
+
+
+  tablinks = document.getElementsByClassName("tablinks");
+
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  } // Show the current tab, and add an "active" class to the button that opened the tab
+
+
+  document.getElementById(projectName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+},{"./main":"js/main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -166,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51727" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57622" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -341,5 +363,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.00a46daa.js.map
