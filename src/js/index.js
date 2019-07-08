@@ -1,5 +1,5 @@
-import main from "./main";
-main();
+// import main from "./main";
+// main();
 
 function onTabClick(event) {
   let activeTabs = document.querySelectorAll(".active");
