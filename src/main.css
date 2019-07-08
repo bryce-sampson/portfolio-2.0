@@ -23,10 +23,6 @@ ul {
   list-style-type: none;
 }
 
-.a-project {
-  color: #201f25;
-}
-
 .about-me {
   display: flex;
   justify-content: space-between;
@@ -37,19 +33,19 @@ ul {
   font-size: 25px;
 }
 
+.contact-button {
+  color: #5f1a37;
+  font-size: 2rem;
+  background-color: #778899;
+  border-width: 5px;
+  border-color: #201f25;
+  border-radius: 1rem;
+}
+
 .contact-info {
   align-items: center;
   display: flex;
   justify-content: center;
-}
-
-.container {
-  background-color: #778899;
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem;
-  margin-top: 0.5rem;
-  padding: 1rem;
 }
 
 .footer {
@@ -89,83 +85,82 @@ ul {
   margin-right: 0;
 }
 
-.project {
-  margin-right: 1rem;
-}
-
-.project--last {
-  margin-right: 0;
-}
-
 .skills {
   margin: 2 rem;
   margin-bottom: 1rem;
   margin-top: -4rem;
 }
 
-/* Style the tab */
-.tab {
+.tabs {
+  background-color: #778899;
+  border: 1px solid #201f25;
+  display: inline-block;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
+.tabs a {
+  color: #201f25;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs button {
+  background-color: #778899;
   border: none;
-  outline: none;
+  color: #201f25;
   cursor: pointer;
+  display: inline-flex;
+  font-size: 1.5rem;
   padding: 14px 16px;
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.tabs button.active {
+  background-color: #b1587d;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.tabs button:hover {
+  background-color: #5f1a37;
+  color: #dc143c;
 }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
+.tab-content {
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  display: flex;
   border-top: none;
 }
 
-@media (min-width: 400px) {
-  /* .nav__list-item {
-    font-size: 0.7rem;
-  } */
+.tabs li {
+  color: #201f25;
+  display: inline-flex;
+  font-size: 1.5rem;
+  padding: 14px 16px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* @media (min-width: 400px) {
 }
 
 @media (min-width: 480px) {
-  /* .navigation-bar {
-    width: 24rem;
-}
-
-.main-header {
-  width: 24rem;
-  } */
 }
 
 @media (min-width: 600px) {
-  /* .container {
-    column-gap: 1rem;
-    display: grid;
-    grid-template-columns: 24rem;
-  } */
 }
 
 @media (min-width: 940px) {
-  /* .project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 24rem);
-  } */
-}
+} */

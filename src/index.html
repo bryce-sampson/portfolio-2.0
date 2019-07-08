@@ -45,49 +45,60 @@
 
         </section>
         <section class="skills">
-            <h2>Skills</h2>
+            <h1>Skills</h1>
             <ul>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Gradle</li>
-                <li>TDD</li>
+                <h3>
+                    <li>Java</li>
+                </h3>
+                <h3>
+                    <li>HTML</li>
+                </h3>
+                <h3>
+                    <li>CSS</li>
+                </h3>
+                <h3>
+                    <li>JavaScript</li>
+                </h3>
+                <h3>
+                    <li>Gradle</li>
+                </h3>
+                <h3>
+                    <li>TDD</li>
+                </h3>
             </ul>
         </section>
-        <h1 id="projects">Projects</h1>
-        <div class="container">
+        <!-- <div class="container">
             <article class="project">
                 <a href="https://github.com/charles-m-doan/virtual-pet" target="_blank">
                     <img src="./images/VPet-screenshot.png" alt="Virtual Pet screenshot" width="350rem"></a>
-                <header>
-                    <h2><a class="a-project" href="https://github.com/charles-m-doan/virtual-pet"
+                    <header>
+                        <h2><a class="a-project" href="https://github.com/charles-m-doan/virtual-pet"
                             target="_blank">Virtual Pet</a></h2>
-                </header>
-                <section>
-                    <p>
-                        <h4>Language/Tools Used</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>Gradle</li>
-                            <li>Git</li>
-                            <li>TDD</li>
-                        </ul>
-                    </p>
-                    <p>Group of four classmates and I worked together using Java, Git and TDD.
-                        We built an App capable of creating and interacting with virtual pets in various ways.
-                    </p>
-                </section>
-            </article>
+                        </header>
+                        <section>
+                            <p>
+                                <h4>Language/Tools Used</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Gradle</li>
+                                    <li>Git</li>
+                                    <li>TDD</li>
+                                </ul>
+                            </p>
+                            <p>Group of four classmates and I worked together using Java, Git and TDD.
+                                We built an App capable of creating and interacting with virtual pets in various ways.
+                            </p>
+                        </section>
+                    </article>
 
-            <article class="project">
-                <a href="https://github.com/bryce-sampson/university-clinic-hospital" target="_blank">
-                    <img src="./images/UCH-screenshot.png" alt="UCH screenshot" width="350rem"></a>
-
-                <header>
-                    <h2><a class="a-project" href="https://github.com/bryce-sampson/university-clinic-hospital"
-                            target="_blank">Uni Clinic Hospital</a></h2>
-                </header>
+                    <article class="project">
+                        <a href="https://github.com/bryce-sampson/university-clinic-hospital" target="_blank">
+                            <img src="./images/UCH-screenshot.png" alt="UCH screenshot" width="350rem"></a>
+                            
+                            <header>
+                                <h2><a class="a-project" href="https://github.com/bryce-sampson/university-clinic-hospital"
+                                    target="_blank">Uni Clinic Hospital</a></h2>
+                                </header>
                 <section>
                     <p>
                         <h4>Language/Tools Used</h4>
@@ -104,19 +115,19 @@
                     </p>
                 </section>
             </article>
-
+            
             <article class="project" class="project--last">
                 <a href="https://github.com/bryce-sampson/bryce-sampson.github.io" target="_blank">
                     <img src="./images/portfolio.png" alt="portfolio screenshot" width="350rem"></a>
-
-                <header>
-                    <h2><a class="a-project" href="https://github.com/bryce-sampson/bryce-sampson.github.io"
+                    
+                    <header>
+                        <h2><a class="a-project" href="https://github.com/bryce-sampson/bryce-sampson.github.io"
                             target="_blank">Portfolio</a>
-                    </h2>
-                </header>
-                <section>
-                    <p>
-                        <h4>Language/Tools Used</h4>
+                        </h2>
+                    </header>
+                    <section>
+                        <p>
+                            <h4>Language/Tools Used</h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -128,42 +139,91 @@
                     </p>
                 </section>
             </article>
+        </div> -->
+
+        <h1 id="projects">Projects</h1>
+        <div class="tabs container">
+            <!-- Tabs -->
+            <ul id="nav-tab" class="nav">
+                <button class="active"><a href="#Virtual-Pet">Virtual Pet</a></button>
+                <button><a href="#Uni-Clinic-Hospital">Uni Clinic Hospital</a></button>
+                <button><a href="#Portfolio">Portfolio</a></button>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="Virtual-Pet">
+                    <a href="https://github.com/charles-m-doan/virtual-pet" target="_blank">
+                        <img src="./images/VPet-screenshot.png" alt="Virtual Pet screenshot" width="350rem"></a>
+                    <header>
+                        <h2><a class="a-project" href="https://github.com/charles-m-doan/virtual-pet"
+                                target="_blank">Virtual Pet</a></h2>
+                    </header>
+                    <section>
+                        <p>
+                            <h3>Language/Tools Used</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Gradle</li>
+                                <li>Git</li>
+                                <li>TDD</li>
+                            </ul>
+                        </p>
+                        <p>Group of four classmates and I worked together using Java, Git and TDD.
+                            We built an App capable of creating and interacting with virtual pets in various ways.</p>
+                    </section>
+                </div>
+                <div class="tab-pane" id="Uni-Clinic-Hospital">
+                    <a href="https://github.com/bryce-sampson/university-clinic-hospital" target="_blank">
+                        <img src="./images/UCH-screenshot.png" alt="UCH screenshot" width="350rem"></a>
+
+                    <header>
+                        <h2><a class="a-project" href="https://github.com/bryce-sampson/university-clinic-hospital"
+                                target="_blank">Uni Clinic Hospital</a></h2>
+                    </header>
+                    <section>
+                        <p>
+                            <h3>Language/Tools Used</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Gradle</li>
+                                <li>Git</li>
+                                <li>TDD</li>
+                            </ul>
+                        </p>
+                        <p>Two classmates and I worked together using Java, Git and TDD.
+                            We built an App capable of interacting with different hospital employees and having
+                            them perform different task.</p>
+                    </section>
+                </div>
+                <div class="tab-pane" id="Portfolio">
+                    <a href="https://github.com/bryce-sampson/bryce-sampson.github.io" target="_blank">
+                        <img src="./images/portfolio.png" alt="portfolio screenshot" width="350rem"></a>
+                    <header>
+                        <h2><a class="a-project" href="https://github.com/bryce-sampson/bryce-sampson.github.io"
+                                target="_blank">Portfolio</a>
+                        </h2>
+                    </header>
+                    <section>
+                        <p>
+                            <h3>Language/Tools Used</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Git</li>
+                            </ul>
+                        </p>
+                        <p>I worked using HTML, CSS and Git. I built a webpage of my portfolio,
+                            describing who I am and what I have accomplished so far.</p>
+                    </section>
+                </div>
+            </div>
         </div>
-
-        <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Virtual Pet')">Virtual Pet</button>
-            <button class="tablinks" onclick="openProject(event, 'Uni Clinic Hospital')">Uni Clinic Hospital</button>
-            <button class="tablinks" onclick="openProject(event, 'Portfolio')">Portfolio</button>
-        </div>
-
-        <!-- Tab content -->
-        <div id="Virtual Pet" class="tabcontent">
-            <h3>Virtual Pet</h3>
-            <p>Group of four classmates and I worked together using Java, Git and TDD.
-                We built an App capable of creating and interacting with virtual pets in various ways.
-            </p>
-        </div>
-
-        <div id="Uni Clinic Hospital" class="tabcontent">
-            <h3>Uni Clinic Hospital</h3>
-            <p>Two classmates and I worked together using Java, Git and TDD.
-                We built an App capable of interacting with different hospital employees and having
-                them perform different task.
-            </p>
-        </div>
-
-        <div id="Portfolio" class="tabcontent">
-            <h3>Portfolio</h3>
-            <p>I worked using HTML, CSS and Git. I built a webpage of my portfolio,
-                describing who I am and what I have accomplished so far.
-            </p>
-        </div>
-
-
 
 
 
         <div class="contact-info" id="contact">
+            <button class="contact-button">Contact Me</button>
             <p>
                 <a href="tel:14195819211" class="mobiles-Only">
                     <img src="./images/phone.jpg" alt="Phone Number" width="30rem"></a>

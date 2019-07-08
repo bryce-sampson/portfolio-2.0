@@ -118,18 +118,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/main.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _default = function _default() {
-  alert("it works");
-};
-
-exports.default = _default;
+// export default () => {
+//   alert("it works");
+// };
 },{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -139,27 +130,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _main.default)();
 
-function openProject(evt, projectName) {
-  // Declare all variables
-  var i, tabcontent, tablinks; // Get all elements with class="tabcontent" and hide them
-
-  tabcontent = document.getElementsByClassName("tabcontent");
-
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  } // Get all elements with class="tablinks" and remove the class "active"
-
-
-  tablinks = document.getElementsByClassName("tablinks");
-
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  } // Show the current tab, and add an "active" class to the button that opened the tab
-
-
-  document.getElementById(projectName).style.display = "block";
-  evt.currentTarget.className += " active";
+function onTabClick(event) {
+  var activeTabs = document.querySelectorAll(".active");
+  activeTabs.forEach(function (tab) {
+    tab.className = tab.className.replace("active", "");
+  });
+  event.target.parentElement.className += " active";
+  document.getElementById(event.target.href.split("#")[1]).className += " active";
 }
+
+var element = document.getElementById("nav-tab");
+element.addEventListener("click", onTabClick);
 },{"./main":"js/main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -188,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57622" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63878" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
