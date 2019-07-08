@@ -117,20 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"main.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _default = function _default() {
-  alert("it works");
-};
-
-exports.default = _default;
-},{}],"index.js":[function(require,module,exports) {
+})({"js/main.js":[function(require,module,exports) {
+// export default () => {
+//   alert("it works");
+// };
+},{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _main = _interopRequireDefault(require("./main"));
@@ -138,7 +129,19 @@ var _main = _interopRequireDefault(require("./main"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _main.default)();
-},{"./main":"main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function onTabClick(event) {
+  var activeTabs = document.querySelectorAll(".active");
+  activeTabs.forEach(function (tab) {
+    tab.className = tab.className.replace("active", "");
+  });
+  event.target.parentElement.className += " active";
+  document.getElementById(event.target.href.split("#")[1]).className += " active";
+}
+
+var element = document.getElementById("nav-tab");
+element.addEventListener("click", onTabClick);
+},{"./main":"js/main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -166,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51727" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63878" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -341,5 +344,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.00a46daa.js.map
